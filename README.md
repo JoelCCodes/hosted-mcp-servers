@@ -1,9 +1,9 @@
 # Awesome Remote MCP Servers
 
-> 📧 **Subscribe to the Newsletter** Stay informed about new MCP servers and updates:
-> [Subscribe](https://remotemcp.substack.com/subscribe)
+> 📧 **Signup to Agentic Workers** Hire your first AI Employee today!
+> [Sign up](Agenticworkers.com)
 
-> Not a developer & looking for ChatGPT Custom Integrations or Claude Custom Connectors? [Check out the Remote MCP Server List](https://www.remote-mcp.com/)
+> Not a developer & looking for ChatGPT Custom Integrations or Claude Custom Connectors? [Check out the Remote MCP Server List](https://hostedmcpservers.com/)
 
 A curated, opinionated list of high-quality **remote** Model Context Protocol (MCP) servers. This repository focuses on listing official and well-maintained MCP servers that can be accessed over the internet, helping developers discover reliable and production-ready services for their AI applications.
 
@@ -28,10 +28,8 @@ Remote MCP servers are a more secure and easier way to use MCP.
 
 ## How can I use an MCP server listed here?
 
-There are two main ways to use remote MCP servers on this list.
 
-1. [Using a MCP ready client](#mcp-client) (Claude, ChatGPT, Cursor, etc.)
-2. [In an API request to an LLM provider](#api-request) (OpenAI, Anthropic, Gemini, etc.)
+[Using a MCP ready client](#mcp-client) (Agentic Workers, Claude, ChatGPT, Cursor, etc.)
 
 ## Authentication options
 
@@ -115,7 +113,7 @@ This is not an exhaustive list of all remote MCP servers. We maintain high stand
 | DeepWiki | RAG-as-a-Service | `https://mcp.deepwiki.com/sse` | Open | [Devin](https://devin.ai/) |
 | Hugging Face | Software Development | `https://hf.co/mcp` | Open | [Hugging Face](https://huggingface.co) |
 | Semgrep | Software Development | `https://mcp.semgrep.ai/sse` | Open | [Semgrep](https://semgrep.dev/) |
-| Remote MCP | MCP Directory | `https://mcp.remote-mcp.com` | Open | [Remote MCP](https://remote-mcp.com/) |
+| Remote MCP | MCP Directory | `https://mcp.https://hostedmcpservers.com/` | Open | [Remote MCP](https://https://hostedmcpservers.com//) |
 | OpenMesh | Service Discovery | `https://api.openmesh.dev/mcp` | Open | [OpenMesh](https://openmesh.dev) |
 | OpenZeppelin Cairo Contracts | Software Development | `https://mcp.openzeppelin.com/contracts/cairo/mcp` | Open | [OpenZeppelin](https://openzeppelin.com) |
 | OpenZeppelin Solidity Contracts | Software Development | `https://mcp.openzeppelin.com/contracts/solidity/mcp` | Open | [OpenZeppelin](https://openzeppelin.com) |
@@ -142,6 +140,12 @@ This is not an exhaustive list of all remote MCP servers. We maintain high stand
 ### MCP Clients
 
 A complete list of MCP clients can be found [here](https://modelcontextprotocol.io/clients). Here are some examples of installation with Claude.
+
+
+
+### Agentic Workers
+
+This is the easiest way to connect to a remote MCP Server. Find the integration you like and copy past the link into Agentic Workers.
 
 ### Claude
 
@@ -176,77 +180,3 @@ Full instructions can be found [here](https://help.openai.com/en/articles/114877
 3. Click "Add Connector"
 4. Add your connector's remote MCP server URL
 5. Finish configuring your connector by clicking "Save"
-
-### Other MCP Clients
-
-Note: As the MCP spec is still in development, not all clients may support all features. In particular client support of OAUTH is not yet widespread.
-
-For desktop clients the configuration you need to add to your client's config file will be
-
-```json
-{
-  "mcpServers": {
-    "<REMOTE_MCP_SERVER_NAME>": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "<REMOTE_MCP_SERVER_URL>"
-      ]
-    }
-  }
-}
-```
-
-### API Libraries
-
-Official support for MCP in API requests is supported by the following LLM providers:
-
-- [Anthropic](https://docs.anthropic.com/en/docs/agents-and-tools/mcp-connector)
-- [OpenAI](https://platform.openai.com/docs/guides/tools-remote-mcp)
-- [Gemini](https://ai.google.dev/gemini-api/docs/function-calling?example=meeting#model_context_protocol_mcp)
-
-Note that it's easier to get started with API Token, based authentication for these servers. See the [FAQs](#faqs) section for more details.
-
-
-## FAQs
-
-### Can I use an Oauth MCP server in an API request to an LLM provider?
-
-Yes, but you will need to manage your own OAuth authentication flow, in order to obtain an access token.
-A quick way to obtain an access token to test a server is to follow the instructions in Anthropic's guide [Obtaining an access token for testing](https://docs.anthropic.com/en/docs/agents-and-tools/mcp-connector#obtaining-an-access-token-for-testing) section.
-This is not generally recommended for production use, as it is not a secure way to authenticate users.
-
-### Why do some servers have a `/sse` and others a `/mcp`?
-
-The `/sse` endpoint is for the Server Sent Events (SSE) protocol. It is being slowly deprecated in favor of the `/mcp` endpoint.
-The `/mcp` endpoint is for the Streamed HTTP protocol.
-In the future some clients may only support adding servers by the prefix preceding the 'sse' or 'mcp' and self-discovering full URL.
-We will update this list as we see this happening.
-
-## Contributing
-
-We welcome contributions! Please follow these guidelines:
-
-1. Fork the repository
-2. Add your remote MCP server to the appropriate category
-3. Include the following information:
-   - Server name
-   - Category
-   - URL
-   - Authentication requirements (Only OAuth 2.0, following the MCP spec is supported)
-   - Example usage
-4. Submit a pull request
-
-## Acknowledgments
-
-- Inspired by the [Model Context Protocol](https://modelcontextprotocol.io/)
-
-## Community
-
-Join the MCP community to stay updated and connect with other developers:
-
-- [Reddit Community](https://www.reddit.com/r/mcp/)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
