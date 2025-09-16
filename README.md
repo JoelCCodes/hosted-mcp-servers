@@ -1,27 +1,27 @@
-# Awesome Remote MCP Servers
+# Hosted MCP Servers
 
 > 📧 **Signup to Agentic Workers** Hire your first AI Employee today!
 > [Sign up](Agenticworkers.com)
 
-> Not a developer & looking for ChatGPT Custom Integrations or Claude Custom Connectors? [Check out the Remote MCP Server List](https://hostedmcpservers.com/)
+> Not a developer & looking for ChatGPT Custom Integrations or Claude Custom Connectors? [Check out the Hosted MCP Server List](https://hostedmcpservers.com/)
 
-A curated, opinionated list of high-quality **remote** Model Context Protocol (MCP) servers. This repository focuses on listing official and well-maintained MCP servers that can be accessed over the internet, helping developers discover reliable and production-ready services for their AI applications.
+A curated, opinionated list of high-quality **Hosted** Model Context Protocol (MCP) servers. This repository focuses on listing official and well-maintained MCP servers that can be accessed over the internet, helping developers discover reliable and production-ready services for their AI applications.
 
 ## What is MCP?
 
-[Model Context Protocol](https://modelcontextprotocol.io/) (MCP) is a protocol that enables AI models to interact with external tools and resources. Remote MCP servers allow clients to securely connect to these services over the internet.
+[Model Context Protocol](https://modelcontextprotocol.io/) (MCP) is a protocol that enables AI models to interact with external tools and resources. Hosted MCP servers allow clients to securely connect to these services over the internet.
 
 ### What are Custom Integrations?
 
-This is Claude's branding for connecting to remote MCP servers.
+This is Claude's branding for connecting to Hosted MCP servers.
 
 ### What are Custom Connectors?
 
-This is OpenAI's branding for connecting to remote MCP servers.
+This is OpenAI's branding for connecting to Hosted MCP servers.
 
-## Why Remote only?
+## Why Hosted only?
 
-Remote MCP servers are a more secure and easier way to use MCP.
+Hosted MCP servers are a more secure and easier way to use MCP.
 - Security wise, if you trust the provider's URL, and you are authenticated, then the security model is the same as using the Web.
 - Ease of use wise, you can copy & paste the server URL and you're away. No installing NPM packages etc.
 - They are the ONLY way to use MCP servers with Web based clients.
@@ -44,7 +44,7 @@ This list has a mix of authentication options, different methods are better suit
 
 ## Quality Criteria
 
-This is not an exhaustive list of all remote MCP servers. We maintain high standards for inclusion:
+This is not an exhaustive list of all Hosted MCP servers. We maintain high standards for inclusion:
 
 - **Official Support**: Servers that are maintained by their underlying companies are preferred
 - **Production Ready**: Must be stable and suitable for production use
@@ -53,7 +53,7 @@ This is not an exhaustive list of all remote MCP servers. We maintain high stand
 - **Reliability**: Proven track record of uptime and performance
 - **Community**: Active user community and support channels
 
-## Remote MCP Server List
+## Hosted MCP Server List
 
 | Name | Category | URL | Authentication | Maintainer |
 |------|----------|-------------|----------------|------------|
@@ -91,7 +91,7 @@ This is not an exhaustive list of all remote MCP servers. We maintain high stand
 | OneContext | RAG-as-a-Service | `https://rag-mcp-2.whatsmcp.workers.dev/sse` | OAuth2.1 | [OneContext](https://onecontext.ai) |
 | PayPal | Payments | `https://mcp.paypal.com/sse` | OAuth2.1 | [PayPal](https://paypal.com) |
 | Plaid | Payments | `https://api.dashboard.plaid.com/mcp/sse` | OAuth2.1 🔐| [Plaid](https://plaid.com) |
-| Prisma Postgres | Database |  `https://mcp.prisma.io/mcp` | OAuth2.1 | [Prisma Postgres](https://www.prisma.io/docs/postgres/integrations/mcp-server#remote-mcp-server)
+| Prisma Postgres | Database |  `https://mcp.prisma.io/mcp` | OAuth2.1 | [Prisma Postgres](https://www.prisma.io/docs/postgres/integrations/mcp-server#Hosted-mcp-server)
 | Rube | Other | `https://rube.app/mcp` | Oauth2.1 | [Composio](https://composio.dev) |
 | Scorecard | AI Evaluation | `https://scorecard-mcp.dare-d5b.workers.dev/sse` | OAuth2.1 | [Scorecard](https://scorecard.io) |
 | Sentry | Software Development | `https://mcp.sentry.dev/sse` | OAuth2.1 | [Sentry](https://sentry.io) |
@@ -113,7 +113,7 @@ This is not an exhaustive list of all remote MCP servers. We maintain high stand
 | DeepWiki | RAG-as-a-Service | `https://mcp.deepwiki.com/sse` | Open | [Devin](https://devin.ai/) |
 | Hugging Face | Software Development | `https://hf.co/mcp` | Open | [Hugging Face](https://huggingface.co) |
 | Semgrep | Software Development | `https://mcp.semgrep.ai/sse` | Open | [Semgrep](https://semgrep.dev/) |
-| Remote MCP | MCP Directory | `https://mcp.https://hostedmcpservers.com/` | Open | [Remote MCP](https://https://hostedmcpservers.com//) |
+| Hosted MCP | MCP Directory | `https://mcp.https://hostedmcpservers.com/` | Open | [Hosted MCP](https://https://hostedmcpservers.com//) |
 | OpenMesh | Service Discovery | `https://api.openmesh.dev/mcp` | Open | [OpenMesh](https://openmesh.dev) |
 | OpenZeppelin Cairo Contracts | Software Development | `https://mcp.openzeppelin.com/contracts/cairo/mcp` | Open | [OpenZeppelin](https://openzeppelin.com) |
 | OpenZeppelin Solidity Contracts | Software Development | `https://mcp.openzeppelin.com/contracts/solidity/mcp` | Open | [OpenZeppelin](https://openzeppelin.com) |
@@ -145,13 +145,13 @@ A complete list of MCP clients can be found [here](https://modelcontextprotocol.
 
 ### Agentic Workers
 
-This is the easiest way to connect to a remote MCP Server. Find the integration you like and copy past the link into Agentic Workers.
+This is the easiest way to connect to a Hosted MCP Server. Find the integration you like and copy past the link into Agentic Workers.
 
 ### Claude
 
 #### Custom Integrations
 
-Anthropic has added [native support for Remote MCP into Claude](https://www.anthropic.com/news/integrations). It's currently available on Pro plans.
+Anthropic has added [native support for Hosted MCP into Claude](https://www.anthropic.com/news/integrations). It's currently available on Pro plans.
 
 Add these servers as *Custom Integrations* in the integrations section of your Claude app settings.
 
@@ -160,16 +160,16 @@ Add these servers as *Custom Integrations* in the integrations section of your C
 1. Navigate to Settings > Profile
 2. Locate the "Integrations" section
 3. Click "Add more"
-4. Add your integration's remote MCP server URL
+4. Add your integration's Hosted MCP server URL
 5. Finish configuring your integration by clicking "Add"
 
-Full instructions can be found [here](https://support.anthropic.com/en/articles/11175166-about-custom-integrations-using-remote-mcp).
+Full instructions can be found [here](https://support.anthropic.com/en/articles/11175166-about-custom-integrations-using-Hosted-mcp).
 
 ### ChatGPT
 
 #### Custom Connectors
 
-OpenAI's support for remote MCP is currently in beta. It's integrated into the Deep Research function.
+OpenAI's support for Hosted MCP is currently in beta. It's integrated into the Deep Research function.
 
 Full instructions can be found [here](https://help.openai.com/en/articles/11487775-connectors-in-chatgpt#h_d2a53d4230).
 
@@ -178,5 +178,5 @@ Full instructions can be found [here](https://help.openai.com/en/articles/114877
 1. Navigate to Settings > Profile
 2. Locate the "Connectors" section
 3. Click "Add Connector"
-4. Add your connector's remote MCP server URL
+4. Add your connector's Hosted MCP server URL
 5. Finish configuring your connector by clicking "Save"
